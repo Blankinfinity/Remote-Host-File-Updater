@@ -3,3 +3,5 @@
 ################################################################################
 
 *.suo
+/Remote-Host-File-Updater/bin/Debug
+/Remote-Host-File-Updater/obj/Debug

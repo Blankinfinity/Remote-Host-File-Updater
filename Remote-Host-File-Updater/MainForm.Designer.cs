@@ -38,8 +38,8 @@
             this.IpAddressTBx = new System.Windows.Forms.TextBox();
             this.TargetHostTBx = new System.Windows.Forms.TextBox();
             this.addBtn = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.removeBtn = new System.Windows.Forms.Button();
+            this.resetBtn = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -128,31 +128,33 @@
             this.addBtn.UseVisualStyleBackColor = true;
             this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
             // 
-            // button2
+            // removeBtn
             // 
-            this.button2.Location = new System.Drawing.Point(477, 353);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 43);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Remove Entry";
-            this.button2.UseVisualStyleBackColor = true;
+            this.removeBtn.Location = new System.Drawing.Point(477, 353);
+            this.removeBtn.Name = "removeBtn";
+            this.removeBtn.Size = new System.Drawing.Size(75, 43);
+            this.removeBtn.TabIndex = 8;
+            this.removeBtn.Text = "Remove Entry";
+            this.removeBtn.UseVisualStyleBackColor = true;
+            this.removeBtn.Click += new System.EventHandler(this.removeBtn_Click);
             // 
-            // button3
+            // resetBtn
             // 
-            this.button3.Location = new System.Drawing.Point(619, 353);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 43);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Reset Hosts";
-            this.button3.UseVisualStyleBackColor = true;
+            this.resetBtn.Location = new System.Drawing.Point(619, 353);
+            this.resetBtn.Name = "resetBtn";
+            this.resetBtn.Size = new System.Drawing.Size(75, 43);
+            this.resetBtn.TabIndex = 9;
+            this.resetBtn.Text = "Reset Hosts";
+            this.resetBtn.UseVisualStyleBackColor = true;
+            this.resetBtn.Click += new System.EventHandler(this.resetBtn_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(950, 408);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.resetBtn);
+            this.Controls.Add(this.removeBtn);
             this.Controls.Add(this.addBtn);
             this.Controls.Add(this.TargetHostTBx);
             this.Controls.Add(this.IpAddressTBx);
@@ -183,8 +185,8 @@
         private System.Windows.Forms.TextBox IpAddressTBx;
         private System.Windows.Forms.TextBox TargetHostTBx;
         private System.Windows.Forms.Button addBtn;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button removeBtn;
+        private System.Windows.Forms.Button resetBtn;
     }
 }
 

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Remote_Host_File_Updater
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
         }

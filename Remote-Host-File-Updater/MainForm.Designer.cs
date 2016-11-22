@@ -34,10 +34,10 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.computerTBx = new System.Windows.Forms.TextBox();
+            this.IpAddressTBx = new System.Windows.Forms.TextBox();
+            this.TargetHostTBx = new System.Windows.Forms.TextBox();
+            this.addBtn = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
@@ -94,38 +94,39 @@
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
-            // textBox1
+            // computerTBx
             // 
-            this.textBox1.Location = new System.Drawing.Point(115, 37);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(224, 281);
-            this.textBox1.TabIndex = 4;
+            this.computerTBx.Location = new System.Drawing.Point(115, 37);
+            this.computerTBx.Multiline = true;
+            this.computerTBx.Name = "computerTBx";
+            this.computerTBx.Size = new System.Drawing.Size(224, 281);
+            this.computerTBx.TabIndex = 4;
             // 
-            // textBox2
+            // IpAddressTBx
             // 
-            this.textBox2.Location = new System.Drawing.Point(443, 37);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(152, 281);
-            this.textBox2.TabIndex = 5;
+            this.IpAddressTBx.Location = new System.Drawing.Point(443, 37);
+            this.IpAddressTBx.Multiline = true;
+            this.IpAddressTBx.Name = "IpAddressTBx";
+            this.IpAddressTBx.Size = new System.Drawing.Size(152, 281);
+            this.IpAddressTBx.TabIndex = 5;
             // 
-            // textBox3
+            // TargetHostTBx
             // 
-            this.textBox3.Location = new System.Drawing.Point(731, 37);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(193, 281);
-            this.textBox3.TabIndex = 6;
+            this.TargetHostTBx.Location = new System.Drawing.Point(731, 37);
+            this.TargetHostTBx.Multiline = true;
+            this.TargetHostTBx.Name = "TargetHostTBx";
+            this.TargetHostTBx.Size = new System.Drawing.Size(193, 281);
+            this.TargetHostTBx.TabIndex = 6;
             // 
-            // button1
+            // addBtn
             // 
-            this.button1.Location = new System.Drawing.Point(337, 353);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 43);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Add Entries";
-            this.button1.UseVisualStyleBackColor = true;
+            this.addBtn.Location = new System.Drawing.Point(337, 353);
+            this.addBtn.Name = "addBtn";
+            this.addBtn.Size = new System.Drawing.Size(75, 43);
+            this.addBtn.TabIndex = 7;
+            this.addBtn.Text = "Add Entries";
+            this.addBtn.UseVisualStyleBackColor = true;
+            this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
             // 
             // button2
             // 
@@ -152,10 +153,10 @@
             this.ClientSize = new System.Drawing.Size(950, 408);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.addBtn);
+            this.Controls.Add(this.TargetHostTBx);
+            this.Controls.Add(this.IpAddressTBx);
+            this.Controls.Add(this.computerTBx);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -178,10 +179,10 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox computerTBx;
+        private System.Windows.Forms.TextBox IpAddressTBx;
+        private System.Windows.Forms.TextBox TargetHostTBx;
+        private System.Windows.Forms.Button addBtn;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
     }
